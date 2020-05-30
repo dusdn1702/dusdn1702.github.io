@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Yeonwoo's Blog"
+title                    : "Y_WOO's Blog :)"
 title_separator          : "-"
 subtitle                 : "공부 기록하기"
 name                     : "Cho Yeonwoo"
-description              : "똑똑한 사람이 될거에오!"
+description              : "y_woo의 공부 기록장"
 url                      : "https://dusdn1702.github.io"
 baseurl                  : #"/blog"
 repository               : "dusdn1702/dusdn1702.github.io"
