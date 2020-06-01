@@ -6,3 +6,6 @@
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+@import('https://fonts.googleapis.com/css?family=Nanm+Gothic');
+@import('https://fonts.google.com/specimen/Do+Hyeon?subset=korean');
+

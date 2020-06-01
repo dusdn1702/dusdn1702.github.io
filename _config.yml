@@ -16,9 +16,9 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Y_WOO's Blog :)"
+title                    : "y_woo Blog :)"
 title_separator          : "-"
-subtitle                 : "공부 기록하기"
+subtitle                 : "공부 기록장"
 name                     : "Cho Yeonwoo"
 description              : "y_woo의 공부 기록장"
 url                      : "https://dusdn1702.github.io"
