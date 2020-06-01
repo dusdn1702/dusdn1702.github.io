@@ -5,5 +5,3 @@ permalink: /algorithms/
 author_profile: false
 ---
 
-아직 없슈
-

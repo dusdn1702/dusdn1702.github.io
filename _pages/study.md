@@ -4,5 +4,3 @@ excerpt: "java, spring boot, c++, etc"
 permalink: /study/
 author_profile: false
 ---
-
-아직 없슈
