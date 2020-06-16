@@ -9,9 +9,10 @@ tags:
   - algorithms
 last_modified_at: 2020-06-16
 ---
-<https://programmers.co.kr/learn/courses/30/lessons/42586>
+<https://programmers.co.kr/learn/courses/30/lessons/42883>
 
-```cpp//큰 수 만들기 - greedy
+```cpp  
+//큰 수 만들기 - greedy
 //1차
 //순서 상관 없이 큰 수 만든다고 생각해서 틀림
 #include <algorithm>
