@@ -9,10 +9,10 @@ tags:
   - algorithms
 last_modified_at: 2020-06-17
 ---
-올바른 괄호 - 연습문제  
-<https://programmers.co.kr/learn/courses/30/lessons/12909>  
-괄호의 개수가 같지 않으면 false  
-닫는 괄호가 여는 괄호보다 많으면 거기서 false로 진행  
+올바른 괄호 - 연습문제
+<https://programmers.co.kr/learn/courses/30/lessons/12909>
+괄호의 개수가 같지 않으면 false
+닫는 괄호가 여는 괄호보다 많으면 거기서 false로 진행
 
 <br>
 ```cpp
@@ -37,3 +37,4 @@ bool solution(string s)
 ```
 <br>
 소요 시간 : 15분
+
