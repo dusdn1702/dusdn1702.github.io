@@ -245,6 +245,15 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+algorithm:
+  type: liquid
+  path: /algorithms/
+study:
+  type: liquid
+  path: /study/
+project:
+  type: liquid
+  path: /projects/
 # https://github.com/jekyll/jekyll-archives
 # jekyll-archives:
 #   enabled:
