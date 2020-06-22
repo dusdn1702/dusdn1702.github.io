@@ -1,7 +1,7 @@
 ---
 title: "알고리즘 공부"
 excerpt: "프로그래머스 ; 큰수만들기"
-
+permalink: /algorithms/
 categories:
   - algorithms
 tags:

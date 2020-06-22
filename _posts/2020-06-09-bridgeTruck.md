@@ -1,7 +1,7 @@
 ---
 title: "알고리즘 #3"
 excerpt: "프로그래머스 ; 다리를 지나는 트럭"
-
+permalink: /algorithms/
 categories:
   - algorithms
 tags:

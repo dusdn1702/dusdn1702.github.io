@@ -1,7 +1,7 @@
 ---
 title: "알고리즘 공부"
 excerpt: "프로그래머스 ; 정수 제곱급 판별하기"
-
+permalink: /algorithms/
 categories:
   - algorithms
 tags:

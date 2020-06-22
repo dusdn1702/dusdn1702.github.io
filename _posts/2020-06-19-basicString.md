@@ -1,7 +1,7 @@
 ---
 title: "알고리즘 공부"
 excerpt: "프로그래머스 ; 문자열 다루기 기본"
-
+permalink: /algorithms/
 categories:
   - algorithms
 tags:

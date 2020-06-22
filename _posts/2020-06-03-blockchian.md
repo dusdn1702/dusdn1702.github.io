@@ -1,6 +1,7 @@
 ---
 title: "하이퍼레저페브릭 철저입문"
 excerpt: "블록체인 프로젝트"
+permalink: /projects/
 
 categories:
   - projects

@@ -1,7 +1,7 @@
 ---
 title: "알고리즘 공부"
 excerpt: "프로그래머스 ; 올바른 괄호"
-
+permalink: /algorithms/
 categories:
   - algorithms
 tags:
