@@ -8,7 +8,7 @@ categoriem:
 tags:
   - study
 
-last_modified_at: 2020-06-22
+last_modified_at: 2020-06-23
 ---
 
 #자동차 경주게임 
@@ -27,3 +27,14 @@ last_modified_at: 2020-06-22
 - 전진하는 자동차 출력할 때 이름도 같이 출력
 - 우승자 출력
 - 공동 우승이면 우승자 모두 출력
+<br>
+### 새로 배운 함수
+1. 스트림
+  - stream은 컬렉션, 배열 등의 저장 요소를 하나씩 참조하며 함수형 인터페이스를 적용하며 반복적으로 처리할 수 있도록 해주는 기능  
+  - stream.collectors.tolist 에 있는 .collect(toList())는 list로 모아준다.  
+  - boxed는 stream을 매핑해준다.  
+2. int 와 Integer의 차이  
+  - int는 내가 흔히 아는 long, float, double 등과 같은 정수 자료형이고 산술 연산이 가능하며 null로는 초기화할 수 없는 wrapping 된 정수이다.  
+  - Integer는 wrapper 클래스로 객체이며, unboxing하지 않으면 연산이 불가능하지만 null은 처리할 수 있다.  
+  - Integer.valueOf(String)은 클래스로 리턴되어 계산이 안되지만 Integer.parseInt(String)은 자료형으로 계산 가능하다.  
+
