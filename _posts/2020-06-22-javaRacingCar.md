@@ -37,4 +37,8 @@ last_modified_at: 2020-06-23
   - int는 내가 흔히 아는 long, float, double 등과 같은 정수 자료형이고 산술 연산이 가능하며 null로는 초기화할 수 없는 wrapping 된 정수이다.  
   - Integer는 wrapper 클래스로 객체이며, unboxing하지 않으면 연산이 불가능하지만 null은 처리할 수 있다.  
   - Integer.valueOf(String)은 클래스로 리턴되어 계산이 안되지만 Integer.parseInt(String)은 자료형으로 계산 가능하다.  
-
+3. 단위 테스트를 하는 경우
+  - 로직이 필요하다면 단위 테스트를 해야하지만 이미 만들어진 라이브러리로 할 경우 필요없다..  
+4. 배열 테스트 하기
+  - String[]의 경우 = {"abc", "de"}로 actual, expected 나눠서 확인
+  - List<>의 경우 = Arrays.asList("abc", "de")로 actual, expected 나눠서 확인
