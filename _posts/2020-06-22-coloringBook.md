@@ -1,7 +1,7 @@
 ---
 title: "알고리즘 공부"
 excerpt: "프로그래머스 ; 카카오프렌즈 컬러링북"
-permalink: /algorithms/
+permalink: /algorithms/19
 
 categoriem:
   - algorithms

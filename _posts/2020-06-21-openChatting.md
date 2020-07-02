@@ -1,7 +1,7 @@
 ---
 title: "알고리즘 공부"
 excerpt: "프로그래머스 ; 오픈채팅방"
-permalink: /algorithms/
+permalink: /algorithms/17
 categories:
   - algorithms
 tags:

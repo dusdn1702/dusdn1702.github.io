@@ -1,7 +1,7 @@
 ---
 title: "알고리즘 공부"
 excerpt: "프로그래머스 ; 연습문제"
-permalink: /algorithms/
+permalink: /algorithms/23
 
 categoriem:
   - algorithms

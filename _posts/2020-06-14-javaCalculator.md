@@ -1,7 +1,7 @@
 ---
 title: "test 공부 && 계산기 만들기"
 excerpt: "java 공부"
-permalink: /study/
+permalink: /study/2
 categories:
   - study
 tags:

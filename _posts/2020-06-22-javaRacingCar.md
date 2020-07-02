@@ -1,7 +1,7 @@
 ---
 title: "java 공부"
 excerpt: "자동차 경주게임"
-permalink: /study/
+permalink: /study/3
 
 categoriem:
   - study

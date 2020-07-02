@@ -1,7 +1,7 @@
 ---
 title: "알고리즘 #2"
 excerpt: "프로그래머스 ; 라면공장"
-permalink: /algorithms/
+permalink: /algorithms/2
 categories:
   - algorithms
 tags:

@@ -1,7 +1,7 @@
 ---
 title: "알고리즘 공부"
 excerpt: "프로그래머스 ; 수박수박수박수?"
-permalink: /algorithms/
+permalink: /algorithms/11
 categories:
   - algorithms
 tags:
