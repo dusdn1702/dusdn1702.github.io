@@ -1,7 +1,7 @@
 ---
 title: "알고리즘 공부"
 excerpt: "프로그래머스 ; 비밀 지도"
-permalink: /algorithms/27
+permalink: /algorithms/28
 
 categoriem:
   - algorithms
@@ -10,12 +10,12 @@ tags:
   - algorithms
 last_modified_at: 2020-07-02
 ---
-//비밀지도 - 카카오 2018  
-//<https://programmers.co.kr/learn/courses/30/lessons/17681>  
-// 이진수 만들기 ; 2로 나눠서 나머지 있으면 1추가 하고 아니면 0이고  
-// 나중에 reverse(.begin(), .end()) 필요!!  
-//아무것도 없는 vector에 푸시 안하고 배열로 넣기 안된다.  
-
+비밀지도 - 카카오 2018  
+<https://programmers.co.kr/learn/courses/30/lessons/17681>  
+ 이진수 만들기 ; 2로 나눠서 나머지 있으면 1추가 하고 아니면 0이고  
+ 나중에 reverse(.begin(), .end()) 필요!!  
+아무것도 없는 vector에 푸시 안하고 배열로 넣기 안된다.  
+```cpp
 #include <algorithm>
 #include <iostream>
 #include <string>
@@ -67,3 +67,6 @@ vector<string> solution(int n, vector<int> arr1, vector<int> arr2) {
     }
     return answer;
 }
+```
+소요 시간 ; 1시간
+비트맵으로 하는 법 알기!!
