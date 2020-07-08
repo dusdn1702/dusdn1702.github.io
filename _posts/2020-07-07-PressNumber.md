@@ -16,8 +16,8 @@ last_modified_at: 2020-07-07
 인턴 코테에서 봤던 문제  
 한시간 걸렸던 것 같은데 함수 잘 나누고 명명도 이쁘게 한 것 같다.  
 이렇게 풀도록 하자. 좀 더 빠르게.  
-
 <br>
+
 ```cpp
 #include <string>
 #include <vector>
