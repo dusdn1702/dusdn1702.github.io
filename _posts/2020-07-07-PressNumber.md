@@ -11,12 +11,12 @@ tags:
   - algorithms
 last_modified_at: 2020-07-07
 ---
+
 키패드 누르기 - 2020 카카오 인턴  
 <https://programmers.co.kr/learn/courses/30/lessons/67256>  
 인턴 코테에서 봤던 문제  
 한시간 걸렸던 것 같은데 함수 잘 나누고 명명도 이쁘게 한 것 같다.  
 이렇게 풀도록 하자. 좀 더 빠르게.  
-<br>
 
 ```cpp
 #include <string>
@@ -30,7 +30,7 @@ string answer = "";
 queue<char> lefthand;
 queue<char> righthand;
 
-int map[4][3]={{1,2,3},{4,5,6},{7,8,9},{11,0,12}}; //번호판
+//int map[4][3]={{1,2,3},{4,5,6},{7,8,9},{11,0,12}}; //번호판
 
 pair<int,int> findmap(int wanttoknow){
     for(int i=0;i<4;i++){
