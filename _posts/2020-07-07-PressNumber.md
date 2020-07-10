@@ -30,8 +30,6 @@ string answer = "";
 queue<char> lefthand;
 queue<char> righthand;
 
-//int map[4][3]={{1,2,3},{4,5,6},{7,8,9},{11,0,12}}; //번호판
-
 pair<int,int> findmap(int wanttoknow){
     for(int i=0;i<4;i++){
         for(int j=0;j<3;j++){
