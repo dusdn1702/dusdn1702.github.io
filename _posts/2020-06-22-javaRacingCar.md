@@ -61,6 +61,7 @@ last_modified_at: 2020-06-23
     - 전역 변수로 함수 쓸때 static 붙이고,  
     - static 내에서만 static 호출  
     - 전역 함수로 사용할 때만 static ; 클래스의 메서드로 사용할 때만 이렇게 쓴다!  
+    - 변수에 static을 사용할 경우 변치 않는 값이 된다. 매직넘버처럼!! 변수가 클래스의 변수가 될지, 객체의 변수가 될지 생각하고 사용해야 한다.  
 3. 생성자  
     - 객체 생성을 위해 호출하는 메소드  
     - 여러개의 생성자를 이용해 원하는 일을 수행하게 할 수 있다.  
@@ -95,5 +96,6 @@ last_modified_at: 2020-06-23
 14. stream  
     - stream에서 .collect(collectingAndThen(toList()), Cars::new) 하면 리스트로 나눠서 또 뭘 하겠느냐  
 15. orElse(), orElseThrow()
-    - get(...)과 orElse(...)는 모두 ...에 값이 있든지 없든지 생성됩니다!!
-    - 따라서 orElseThrow(null)을 사용하는 것이 null에서 예외를 발생시키기에 합당합니다.
+    - get(...)과 orElse(...)는 모두 ...에 값이 있든지 없든지 생성된다!!
+    - 따라서 orElseThrow(()->new NoSuchElementException())을 사용하는 것이 null에서 예외를 발생시키기에 합당함
+    - 예외 클래스를 만들어서 던져주어야 한다.
