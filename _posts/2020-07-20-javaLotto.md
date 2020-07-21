@@ -29,3 +29,22 @@ last_modified_at: 2020-07-20
 - enum의 사용
         클래스와 같은 구현으로, 클래스를 상수처럼 사용하는 것  
         관련 있는 상수 값들을 enum으로 구현하면 유용하다  
+
+# 7/21
+- Random stream의 사용
+        Random().ints(3, 0, 11)할 경우 1부터 10까지 3개의 랜덤 함수 생성  
+        중복을 방지하기 위해 .distinct() 사용  
+        distinct 사용할 경우 .limit(3)으로 갯수 제한 필요  
+        .boxed()를 이용해 상태 cast 가능  
+        .collect(toList())를 사용해 list로 만들기  
+        한개씩 랜덤넘버 만들 경우 nextInt(upper) 사용  
+- null 예외처리
+        Objects.requireNonNull(inputNumbers, "숫자가 null입니다.");  
+        로 하면 inputNumbers 안에 있는 null이 예외처리됨  
+- ArrayList <-> List
+        List<> 만들으려면 Arrays.asList() 사용  
+        List -> ArrayList 는 arrayList.addAll(List)  
+        ArrayList -> Array 는 arrayList.toArray(arr)  
+        ArrayList는 클래스, List는 인터페이스 (int, Integer)  
+        ArrayList는 동적으로 조절 가능  
+
