@@ -48,3 +48,10 @@ last_modified_at: 2020-07-20
         ArrayList는 클래스, List는 인터페이스 (int, Integer)  
         ArrayList는 동적으로 조절 가능  
 
+# 7/23
+- valueOf의 사용
+        입력한 인자를 Number 객체 형으로 변환해서 반환하는 것  
+        enum에서 valueOf를 사용했다면 그 클래스 형식으로 변환해서 반환해준다  
+        Integer, String, Float 등등 사용 가능  
+- BigInteger란 
+        long보다 큰 수를 다뤄야할 때 BigInteger 사용  
