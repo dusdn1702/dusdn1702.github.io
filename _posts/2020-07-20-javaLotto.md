@@ -55,3 +55,10 @@ last_modified_at: 2020-07-20
         Integer, String, Float 등등 사용 가능  
 - BigInteger란 
         long보다 큰 수를 다뤄야할 때 BigInteger 사용  
+
+# 7/25
+- interface의 사용
+        객체의 기능을 구현하는 함수  
+        인터페이스 속 기능들을 객체가 갖도록 하겠다. <public class LEDTV implements TV> 로 사용  
+        참조변수의 타입으로 인터페이스도 사용할 수 있다.  
+        동일한 인터페이스를 사용하는건 클래스의 사용법이 같다는 것을 의미  
