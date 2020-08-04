@@ -62,3 +62,15 @@ last_modified_at: 2020-07-20
         인터페이스 속 기능들을 객체가 갖도록 하겠다. <public class LEDTV implements TV> 로 사용  
         참조변수의 타입으로 인터페이스도 사용할 수 있다.  
         동일한 인터페이스를 사용하는건 클래스의 사용법이 같다는 것을 의미  
+
+# 7/27
+- map
+        new linkedHashMap 사용하면 key와 value에 관계없이 입력 그대로 출력 가능  
+        각각 value, key에 따라 오름차순/내림차순 정렬도 가능  
+        TreeMap<>(comparator) 는 애초에 넣을 때 정렬됨  
+        List를 이용하는 경우 한쪽만 정렬이 필요하면 정렬할 수 있다  
+        Stream을 이용해서도 정렬 가능  
+- ArrayList와 LinkedList
+        추가/삭제가 빈번하면 Linked, 인덱스 조회가 빈번하면 Array  
+- getter의 사용을 지양하자  
+        getter는 객체를 노출시킨다. 객체에게 메시지를 보내서 직접 판단하도록 하자  
