@@ -25,3 +25,6 @@ last_modified_at: 2020-08-04
 - list.sort(reverse=True)는 내림차순 4,3,2,1
 - list.reverser()는 list를 거꾸로
 - list.sort(key=len)은 길이순으로 정렬
+
+## 20/08/06
+- %s 문자열, %c 문자1개, %d 정수, %f 부동소수, %o 8진수, %x 16진수
