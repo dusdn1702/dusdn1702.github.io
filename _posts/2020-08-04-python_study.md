@@ -37,3 +37,7 @@ last_modified_at: 2020-08-04
 - max(a,b,c)면 a,b,c 중 최대
 - list.count(요소) 하면 요소의 개수 나옴
 - list의 생성은 [a,b,c]
+
+## 20/08/09
+- 딕셔너리 자료형 ; LIST = {'HI':11, 'HELLO':10} 등의 Key, Value으로 map 생성
+- 문자열[::-1] 하면 그 문자열 거꾸로 
