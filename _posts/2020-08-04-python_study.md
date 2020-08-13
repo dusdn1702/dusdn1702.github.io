@@ -44,3 +44,10 @@ last_modified_at: 2020-08-04
 
 ## 20/08/11
 - 문자열 포맷팅 여러개 한 경우 괄호로 묶어서 전달 print("one is %d\n two is %d", %(1,2))
+- ' + '.join(map(str, numbers)) 하면 numbers 요소 사이사이에 +가 쪼인된다
+- lambda 인자 : 표현식 ex) lambda x:x[1] 하면 x가 1번째 요소가 됨
+- sorted(list, key = lambda x:x[1])의미는 list의 1번째 요소로 오름차순 sort
+- print(list[-1][0])은 제일 큰거의 0번째 요소 출력
+
+## 20/08/14
+- 제곱: x**y 하면 x의 y제곱
