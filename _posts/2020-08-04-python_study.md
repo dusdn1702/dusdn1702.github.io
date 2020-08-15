@@ -51,3 +51,16 @@ last_modified_at: 2020-08-04
 
 ## 20/08/14
 - 제곱: x**y 하면 x의 y제곱
+
+## 20/08/15
+- import math 하면 쓸 수 있는 함수
+    math.ceil(수): 올림  
+    math.fabs(수): 절댓값  
+    math.factorial(수): 팩토리얼 함수  
+    math.floor(수): 내림(-3.14면 -4)
+    math.trunc(수): 내림(-3.14면 -3)  
+    math.gcd(1, 4): 최대공약수  
+    math.modf(수): 정수와 소수 분리해 반환  
+    math.pow(3,2): 3^2  
+    math.sqrt(수): 제곱근 반환
+    math.각삼각함수
