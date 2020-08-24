@@ -3,7 +3,7 @@ title: "알고리즘 공부"
 excerpt: "프로그래머스 ; 뉴스 클러스터링"
 permalink: /algorithms/27
 
-categoriem:
+categories:
   - algorithms
 tags:
   - programmers

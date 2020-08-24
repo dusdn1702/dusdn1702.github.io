@@ -3,7 +3,7 @@ title: "알고리즘 공부"
 excerpt: "프로그래머스 ; 비밀 지도"
 permalink: /algorithms/28
 
-categoriem:
+categories:
   - algorithms
 tags:
   - programmers

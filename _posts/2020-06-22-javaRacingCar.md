@@ -3,7 +3,7 @@ title: "자동차 경주게임 만들기"
 excerpt: "java 공부"
 permalink: /study/3
 
-categoriem:
+categories:
   - study
 tags:
   - study

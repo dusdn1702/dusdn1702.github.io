@@ -3,7 +3,7 @@ title: "알고리즘 공부"
 excerpt: "프로그래머스 ; 멀쩡한 사각형"
 permalink: /algorithms/41
 
-categoriem:
+categories:
   - algorithms
 tags:
   - programmers

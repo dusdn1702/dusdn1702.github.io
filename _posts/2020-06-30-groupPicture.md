@@ -3,7 +3,7 @@ title: "알고리즘 공부"
 excerpt: "프로그래머스 ; 단체사진 찍기"
 permalink: /algorithms/24
 
-categoriem:
+categories:
   - algorithms
 tags:
   - programmers

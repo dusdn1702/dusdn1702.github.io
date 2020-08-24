@@ -4,7 +4,7 @@ excerpt: "백준 ; 소인수분해"
 permalink: /algorithms/36
 
 
-categoriem:
+categories:
   - algorithms
 tags:
   - programmers

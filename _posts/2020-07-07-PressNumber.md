@@ -4,7 +4,7 @@ excerpt: "프로그래머스 ; 키패드 누르기"
 permalink: /algorithms/33
 
 
-categoriem:
+categories:
   - algorithms
 tags:
   - programmers

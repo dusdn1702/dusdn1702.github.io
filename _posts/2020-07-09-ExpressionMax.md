@@ -4,7 +4,7 @@ excerpt: "프로그래머스 ; 수식 최대화"
 permalink: /algorithms/34
 
 
-categoriem:
+categories:
   - algorithms
 tags:
   - programmers

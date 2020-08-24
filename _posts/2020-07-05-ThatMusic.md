@@ -3,7 +3,7 @@ title: "알고리즘 공부"
 excerpt: "프로그래머스 ; 방금 그곡"
 permalink: /algorithms/30
 
-categoriem:
+categories:
   - algorithms
 tags:
   - programmers

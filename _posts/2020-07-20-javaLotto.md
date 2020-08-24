@@ -3,7 +3,7 @@ title: "로또"
 excerpt: "java 공부"
 permalink: /study/4
 
-categoriem:
+categories:
   - study
 tags:
   - study

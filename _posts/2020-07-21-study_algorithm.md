@@ -3,7 +3,7 @@ title: "TIL"
 excerpt: "알고리즘 공부"
 permalink: /study/5
 
-categoriem:
+categories:
   - study
 tags:
   - study

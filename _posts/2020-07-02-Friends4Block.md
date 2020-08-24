@@ -3,7 +3,7 @@ title: "알고리즘 공부"
 excerpt: "프로그래머스 ; 프렌즈4블럭"
 permalink: /algorithms/29
 
-categoriem:
+categories:
   - algorithms
 tags:
   - programmers

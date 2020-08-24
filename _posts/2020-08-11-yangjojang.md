@@ -3,7 +3,7 @@ title: "알고리즘 공부"
 excerpt: "백준 ; yangjojang of the year"
 permalink: /algorithms/38
 
-categoriem:
+categories:
   - algorithms
 tags:
   - baekjoon
