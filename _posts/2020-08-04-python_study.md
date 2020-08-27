@@ -62,5 +62,19 @@ last_modified_at: 2020-08-04
     math.gcd(1, 4): 최대공약수  
     math.modf(수): 정수와 소수 분리해 반환  
     math.pow(3,2): 3^2  
-    math.sqrt(수): 제곱근 반환
+    \*math.sqrt(수): 제곱근 반환\*
     math.각삼각함수
+
+## 20/08/27
+- True/False임..  
+- 집합은 set인데 a=set()하거나 set([1,2,3])과 같이 list 선언하고 들어가야 한다! 집합에는 중복x  
+- {}는 사전형! 사전형은 map이당  
+- []가 리스트!  
+    list(map(''.join, permutations(list(numbers), j)) number를 list로 보고 각 숫자 j개를 순열해서 list로 넣는 것  
+    이미 list인 경우는 list(map(''.join, permutations(list, j))이고, 개수 전부 하고 싶으면 permutations(list) 해도 된다.  
+    순열은 순서 상관 있는거고 combination 쓰면 list(map(''.join, combination(list j)) 순서 상관 없는 조합도 나타낼 수 있다.  
+    import itertools 해주어야 한다.  
+- map은 map(int, input().split())처럼 나누고 할당한다고 생각하면 된다.  
+- join은 리스트에서 문자열로  
+- slice는 [1:10] 1은 포함, 10은 비포함  
+- step은 [1:5:2] 1에서 4까지 2씩 띄워서 list로
