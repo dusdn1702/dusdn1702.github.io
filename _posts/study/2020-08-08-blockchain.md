@@ -1,7 +1,7 @@
 ---
 title: "블록체인 멘토링"
 excerpt: "블록체인 - 하이퍼레져패브릭"
-permalink: /study/6
+permalink: /study/7
 
 categories:
   - study

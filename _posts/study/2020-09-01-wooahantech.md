@@ -1,7 +1,7 @@
 ---
 title: "우아한 테크러닝"
 excerpt: "Typescipt & React"
-permalink: /study/8
+permalink: /study/9
 
 categories:
   - study

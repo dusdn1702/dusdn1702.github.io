@@ -1,6 +1,7 @@
 ---
 title: "블록체인"
 excerpt: "하이퍼레저 패브릭 - mychain 체인코드를 CLI를 통해 query, invoke 하기"
+permalink: /study/3
 
 categories:
   - Blog
