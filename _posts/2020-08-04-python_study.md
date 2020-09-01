@@ -8,7 +8,7 @@ categories:
 tags:
   - study
 
-last_modified_at: 2020-08-04
+last_modified_at: 2020-09-01
 ---
 ## 20/08/04
 - 리스트에서 -1은 제일 뒷 요소를 가리킨다.  
@@ -84,3 +84,17 @@ last_modified_at: 2020-08-04
 - 딕셔너리 등록 a = {1:'a', 'b':'c', 'name'=[1,2,3,hi]}로 가능  
 - dictionary.keys() 하면 key들이 리스트로  
 - 입력 요소가 []안에 들어있을 때는 안에 있는 걸 리스트로 보고 element[0], element[1] 등으로 사용하면 된다.  
+
+## 20/09/01
+- \*\*enumerate\*\* 인덱스 번호와 항목 연결 for p in enumerate([1,2,3,4]): 하면 (0,1)(1,2)(2,3)(3,4)가 됨  
+- \*\*zip\*\* 동일한 개수의 두 자료형을 묶어줌  
+list로 만들 경우 ; numbername=list(zip(number,name))  
+dictionary로 만들 경우 ; for number, name in zip(number, name): dic[number]=name  
+- defaultdict(list)로 할 경우 기본값 list로 정의되어 비어있어도 에러 안남
+- lambda식 사용법 ; lambda a, b: a+b 로 매개변수 a,b: 표현식a+b
+- 리스트 확장 alist.extend(blist) 하면 alist에 blist를 더하도록
+- insert는 (자리, 넣을 값)
+- append는 요소 추가
+- pop은 마지막 요소 삭제
+- del a[1]은 a의 1번째 요소 삭제
+- \*\*collections.Counter()\*\* dictionary 같은 hash형 자료들의 값 개수 셀 때 사용!! 객체들간 연산도 가능 => import collections 필요  
