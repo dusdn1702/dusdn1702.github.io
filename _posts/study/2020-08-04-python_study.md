@@ -45,7 +45,7 @@ last_modified_at: 2020-09-01
 ## 20/08/11
 - 문자열 포맷팅 여러개 한 경우 괄호로 묶어서 전달 print("one is %d\n two is %d", %(1,2))
 - ' + '.join(map(str, numbers)) 하면 numbers 요소 사이사이에 +가 쪼인된다
-- lambda 인자 : 표현식 ex) lambda x:x[1] 하면 x가 1번째 요소가 됨
+- lambda 인자 : 표현식 ex lambda x:x[1] 하면 x가 1번째 요소가 됨
 - sorted(list, key = lambda x:x[1])의미는 list의 1번째 요소로 오름차순 sort
 - print(list[-1][0])은 제일 큰거의 0번째 요소 출력
 
@@ -98,3 +98,8 @@ dictionary로 만들 경우 ; for number, name in zip(number, name): dic[number]
 - pop은 마지막 요소 삭제
 - del a[1]은 a의 1번째 요소 삭제
 - \*\*collections.Counter()\*\* dictionary 같은 hash형 자료들의 값 개수 셀 때 사용!! 객체들간 연산도 가능 => import collections 필요  
+
+## 20/09/04
+- deque() 사용 - pop(), popleft() 추가할 땐 append(2)
+- stack() 사용 - pop(), appen(1)
+- for문의 range(a,b) 하면 a 포함 b 미포함
