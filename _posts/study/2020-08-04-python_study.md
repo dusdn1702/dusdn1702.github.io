@@ -100,6 +100,16 @@ dictionary로 만들 경우 ; for number, name in zip(number, name): dic[number]
 - \*\*collections.Counter()\*\* dictionary 같은 hash형 자료들의 값 개수 셀 때 사용!! 객체들간 연산도 가능 => import collections 필요  
 
 ## 20/09/04
-- deque() 사용 - pop(), popleft() 추가할 땐 append(2)
-- stack() 사용 - pop(), appen(1)
+- deque() 사용 - pop()우, popleft()좌 추가할 땐 append(2)우 appendleft(2)좌
+- stack() 사용 - pop(), append(1)
 - for문의 range(a,b) 하면 a 포함 b 미포함
+
+## 20/09/07
+- deque의 사용  
+  from collections import deque 필요  
+- heapq의 사용   
+    import heap하여 사용할 수 있음   
+    heapq.heappop(list), heapq.heappush(list, 넣을 수)를 이용해 이진트리로 정렬한 다음 빼내고 넣기 가능  
+    heapq.heapify(list) 로 list를 heap으로 만듦  
+    heapq.heappop(list) 하면 가장 작은 수 나옴  
+- and / or 은 소문자다......!!!  
