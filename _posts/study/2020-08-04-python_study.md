@@ -113,3 +113,6 @@ dictionary로 만들 경우 ; for number, name in zip(number, name): dic[number]
     heapq.heapify(list) 로 list를 heap으로 만듦  
     heapq.heappop(list) 하면 가장 작은 수 나옴  
 - and / or 은 소문자다......!!!  
+
+## 20/09/06  
+- 전역변수는 함수 밖에서 초기화해주고 각각 함수들에서 global로 선언하면 사용할 수 있다.  
