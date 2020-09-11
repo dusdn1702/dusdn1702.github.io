@@ -116,3 +116,6 @@ dictionary로 만들 경우 ; for number, name in zip(number, name): dic[number]
 
 ## 20/09/06  
 - 전역변수는 함수 밖에서 초기화해주고 각각 함수들에서 global로 선언하면 사용할 수 있다.  
+
+## 20/09/11
+- enumerate(set(), start=1) 하면 (1부터 index-set()에 들어있는거)를 mapping  
