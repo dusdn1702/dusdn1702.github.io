@@ -150,3 +150,13 @@ import math
 #### 기타 
 파이 print(math.pi)  
 e print(math.e)  
+
++ 제곱
+x ** y 하면 x의 y제곱  
+pow(a, b) 하면 a의 b제곱  
+
++ split("\n") 하면 개행 기준 분할
+
++ 빈 리스트 확인 not list: 비어있으면 false임  
+
++ defaultdict(list) 사용하기!
