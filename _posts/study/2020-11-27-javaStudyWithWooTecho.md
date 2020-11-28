@@ -44,6 +44,7 @@ Integer는 Wrapping 객체이다. 따라서 .equals로 비교, int는 자료형�
 - sorted(): 정렬 가능
 - distinct(): 중복 제거
 - map(): map(s->s.substring(0, 1))과 같이 형의 변환하면서 매핑
+- collect(): stream의 요소들을 List나 Set 자료형으로 변환, joining(ex; .stream().map(Card::toStringInfo).collect(Collectors.joining(","))), sorting, 평균값 등 리턴
 + intStream은 sum(), average(), max(), min() 계산 가능
 
 #### 메서드의 참조
@@ -51,3 +52,15 @@ Player::calculate() 과 같이 메서드 참조 사용 가능
 
 #### 상수 분리
 private static final int CONSTANT_NAME = 1; 과 같이 변하지 않는 고정 상수, 문자열 빼서 정의해주기
+
+## 1주차 - 블랙잭게임
+
+### 배운 것
+
+#### String 다루기
+- string.split(",")하면 string[]으로, Arrays.asList(string[])하면 List<>으로 나눠짐
+- String.join("", array)하면 String 하나로 합쳐짐
+- String은 불변임, StringBuffer나 StringBuilder가 가변적임. 따라서 문자열에 변화가 빈번하면 가변적인거 사용. StringBuilder는 동기화를 지원하지 않아 멀티쓰레드에서는 부적합하지만 단일쓰레드에서 성능은 더 좋고, StringBuffer는 동기화 되어 멀티쓰레드 환경에서 안전, String도 안전.
+
+#### Collections
+- Collections.shuffle(list) 하면 리스트 셔플
