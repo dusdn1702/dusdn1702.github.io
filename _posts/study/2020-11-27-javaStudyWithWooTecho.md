@@ -53,6 +53,11 @@ Player::calculate() 과 같이 메서드 참조 사용 가능
 #### 상수 분리
 private static final int CONSTANT_NAME = 1; 과 같이 변하지 않는 고정 상수, 문자열 빼서 정의해주기
 
+#### List, Map, Set
+- List : 순서가 있고 중복 허용, Arrays.asList, List.of 로 생성
+- Set : 순서가 없고 중복 비허용, Set.of로 생성
+- Map : key-value의 쌍, Map.of로 생성
+
 ## 1주차 - 블랙잭게임
 
 ### 배운 것
