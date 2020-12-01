@@ -46,12 +46,21 @@ Integer는 Wrapping 객체이다. 따라서 .equals로 비교, int는 자료형�
 - map(): map(s->s.substring(0, 1))과 같이 형의 변환하면서 매핑
 - collect(): stream의 요소들을 List나 Set 자료형으로 변환, joining(ex; .stream().map(Card::toStringInfo).collect(Collectors.joining(","))), sorting, 평균값 등 리턴
 + intStream은 sum(), average(), max(), min() 계산 가능
++ intStream.range(0, 3).filter(index -> numbers.get(index).equals(randomnumbers.get(index))).count() 하면은 index에 따른 비교할 수 있다.
 
 #### 메서드의 참조
 Player::calculate() 과 같이 메서드 참조 사용 가능
 
 #### 상수 분리
-private static final int CONSTANT_NAME = 1; 과 같이 변하지 않는 고정 상수, 문자열 빼서 정의해주기
+private static final int CONSTANT_NAME = 1; 과 같이 변하지 않는 고정 상수, 문자열 빼서 정의해주기, 얘네들도 올바른 객체에 필요한 위치에 있는지 확인해주기
+
+#### 객체 다루기
+컨트롤러는 무상태 객체, 따라서 필드변수는 필요 없다.  
+생성자를 사용해서 객체 내에 객체를 선언하고 다루면 더 좋다.  
+컨트롤러에 모든걸 다 넣는게 좋은게 아니다.  
+static은 올려놓고 가져다 쓰는 것.  
+정적 클래스는 쓸때마다 호출하는 것.  
+\*객체에 필드변수 갖는 것은 관리해야할게 느는 것. 이 객체가 변수를 가지고 다루는게 맞는지 항상 생각하자\*
 
 #### List, Map, Set
 - List : 순서가 있고 중복 허용, Arrays.asList, List.of 로 생성
@@ -69,3 +78,11 @@ private static final int CONSTANT_NAME = 1; 과 같이 변하지 않는 고정 �
 
 #### Collections
 - Collections.shuffle(list) 하면 리스트 셔플
+
+### 앞으로
+- 좀 더 세분화해서 기능 별로 커밋하는 습관을 가지고, 구현 목록도 세분화해서 작성하자
+- 객체의 역할과 책임에 대해 끊임없이 생각하자
+- 어떻게 하면 요구사항이 바뀌어도 사용할 수 있는 코드일까 고민하자
+- 가독성이 좋은 코드인지 고민하자
+- 컨벤션 지키기를 잊지 말자
+- 하지 말아야 할 것(객체 내 불필요한 필드 변수의 선언, getter의 남발, depth 2 이상, else의 사용)을 최대한 줄이려고 고민하자
