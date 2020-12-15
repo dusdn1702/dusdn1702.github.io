@@ -23,6 +23,20 @@ last_modified_at: 2020-11-26
 - System.exit 이용하지 않기
 - 비정상적 입력에 대해 IllegalArgumentException 발생
 
+### 1주차 피드백
+- 이름을 통해 의도 드러내라
+- 축약하지 말것
+- 불필요한 공백, 공백 라인 만들지 말것
+- 순서도 주의해라(상수, 클래스 변수, 인스턴스 변수, 생성자, 메서드)
+- 반복하지 마라
+- space와 tab 하나만 사용하기
+- 의미 없는 주석 달지 않기
+- 값을 상수로 빼기
+- commit 메시지 의미있게 작성하기
+- 기능 목록 수시로 업데이트 
+- 기능 목록 구현 재검토: 예외까지
+- readme.md 상세히
+
 ### 배운 것
 
 #### static과 final
@@ -67,10 +81,6 @@ static은 올려놓고 가져다 쓰는 것.
 - Set : 순서가 없고 중복 비허용, Set.of로 생성
 - Map : key-value의 쌍, Map.of로 생성
 
-## 1주차 - 블랙잭게임
-
-### 배운 것
-
 #### String 다루기
 - string.split(",")하면 string[]으로, Arrays.asList(string[])하면 List<>으로 나눠짐
 - String.join("", array)하면 String 하나로 합쳐짐
@@ -99,6 +109,16 @@ static은 올려놓고 가져다 쓰는 것.
 - 비정상적 입력에 대해 IllegalArgumentException 발생, 에러 문구 [ERROR]로 출력
 - 함수의 길이 15라인 이하
 - else 예약어 쓰지 않기: if 조건절에서 값 return
+
+### 2주차 피드백
+- java api 적극 활용
+- 배열 대신 java collection 사용하기 List, Set, Map 등
+- 객체에 메시지를 보내라
+- 인스턴스 변수의 수를 줄여라
+- 비즈니스 로직과 UI 로직을 분리해서 다른 클래스가 담당하도록 하라
+- 함수 라인에 대한 기준
+- 커밋에 번호 추가하지 않기
+- 예외케이스 고민하기
 
 ### 배운것
 
@@ -152,3 +172,47 @@ collection을 wrapping하면서 다른 변수가 없는 클래스의 상태이�
 #### 클래스와 인스턴스
 - 클래스는 붕어빵 틀, 상태가 없다. 메서드는 인스턴스를 생성하지 않은 상태에서도 호출할 수 있다. 여러 인스턴스에서 공유하는 정보가 있는 경우에 필드를 생성해 사용한다.
 - 인스턴스는 객체, 상태를 가지고 메서드를 통해 상태가 변경된다. 인스턴스의 필드는 상태 정보를 가지고 있는 변수. 생성자는 객체에만 있다.
+
+## 3주차 - 지하철 노선도
+
+### 배운것
+
+#### 인터페이스
+- 아무것도 없이 밑그림만 그려져 있는 기본 설계도로 상속된 곳에서 제 메서드로 구현받아 활동
+- 인터페이스끼리는 상속받을 수 있다.
+- 보통 클래스에 상속되어 정의 한다. class ABC implements DEF 로 선언한다.
+- 인터페이스를 이용해 개발 시간을 단축하고, 표준화, 클래스 간 관계 형성, 독립적인 프로그래밍 가능
+- 인터페이스를 사용하는 쪽은 선언부만 알고 호출하면, 인터페이스의 내용이 실행된다. 따라서 알맹이의 변경이 호출자에 영향을 끼치지 않는다.
+
+#### enum
+1. 데이터들 간의 연관관계 표현에 쉽다: Staion, Line, Way와 같이 function을 enum으로 표현했듯이!
+2. 상태와 행위를 한 곳에서 관리: Function<T, R>과 같은 아래의 함수로 Station -> Enroll -> function 매핑했듯이!
+3. 데이터 그룹관리: 현금의 결제 방법, 카드의 결제 방법 같은 거를 가지고 있도록 하여서 찾기 쉽도록!
+4. 관리 주체를 DB에서 객체로
+- 중복되는 함수를 줄일 수 있다.
+- 리팩토링이 쉽다.
+- 문맥을 담는다
+
+#### ITERATOR
+- map을 순회하면서 remove하고자 할 때 concurrentModificationException 에러가 발생했다. 이는 삭제되었는데 map에서 계속 작아진 사이즈를 반영하지 않고 찾으려고 할 때 발생하는 문제다. 해결법을 찾으니
+```java
+Iterator<String> iterator = list.iterator();
+while(iterator.hasNext()){
+  String s = iterator.next();
+  iterator.remove();
+}
+```  
+이처럼 반복자를 사용하는 방법이었다. .next 메서드가 먼저 호출되어야해서 remove에서 에러가 발생할리 없는 코드이다.  
+이 코드는 IntelliJ에서 아래 코드로 변경하기를 추천받았다.
+```java
+  subway.keySet().removeIf(line -> line.isSameNameThan(inputLineName));
+```  
+removeIf를 이용해 조건에 맞는게 있으면 모두 삭제하는 방식으로 훨씬 직관적이고 이해가 쉽다.
+
+#### 함수적 인터페이스
+- Consumer: 매개값 있고, 리턴값 없음 -> .accept(매개값) 으로 사용, andThen(매개값)으로 연속 실행 가능
+- Supplier: 매개값 없고, 리턴값 있음 -> 리턴값.get() 으로 사용
+- Function: 매개값 있고, 리턴값 있음(매핑 위주) -> apply(매개값)로 적용
+- Operator: 매개값 있고, 리턴값 있음(연산 위주)
+- Predicate: 매개값 있고, 리턴은 boolean(매개값 조사해서 반환) -> test(매개값)으로 조사
+
