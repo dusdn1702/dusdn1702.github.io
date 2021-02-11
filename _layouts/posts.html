@@ -1,10 +1,7 @@
 ---
 layout: archive
 ---
-
-{{ content }}
-
-<ul class="taxonomy__index">
+<!-- <ul class="taxonomy__index">
   {% assign postsInYear = site.posts | group_by_exp: 'post', 'post.date | date: "%Y"' %}
   {% for year in postsInYear %}
     <li>
@@ -26,4 +23,21 @@ layout: archive
     </div>
     <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
   </section>
+{% endfor %} -->
+
+
+{{ content }}
+
+<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+
+{% if paginator %}
+  {% assign posts = paginator.posts %}
+{% else %}
+  {% assign posts = site.posts %}
+{% endif %}
+
+{% for post in posts %}
+  {% include archive-single.html %}
 {% endfor %}
+
+{% include paginator.html %}
