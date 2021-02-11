@@ -16,15 +16,15 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "y_woo Blog :)"
+title                    : "y_woo :)"
 title_separator          : "-"
-subtitle                 : "공부 기록장"
+subtitle                 : "연우의 개발 블로그"
 name                     : "Cho Yeonwoo"
-description              : "y_woo의 공부 기록장"
+description              : "연우의 개발 블로그"
 url                      : "https://dusdn1702.github.io"
 baseurl                  : #"/blog"
 repository               : "dusdn1702/dusdn1702.github.io"
-teaser                   : "/assets/images/me.JPG"
+teaser                   : "/assets/images/ㅎㅇ.JPG"
 logo                     : "/assets/images/ㅎㅇ.jpg"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
@@ -101,10 +101,10 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:dusdn1702@naver.com"
+      url: "mailto:dusdn1702@naver.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://dusdn1702.github.iocom"
+      url: "https://dusdn1702.github.iocom"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
@@ -254,6 +254,9 @@ study:
 project:
   type: liquid
   path: /projects/
+techcourse:
+  type: liquid
+  path: /techcourse/
 # https://github.com/jekyll/jekyll-archives
 # jekyll-archives:
 #   enabled:
