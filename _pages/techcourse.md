@@ -1,7 +1,7 @@
 ---
 title: "나의 프로젝트"
 excerpt: ""
-permalink: /projects/
+permalink: /techcourse/
 author_profile: false
 ---
 
