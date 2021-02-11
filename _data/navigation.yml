@@ -2,8 +2,8 @@
 main:
   - title: "ALGORITHM"
     url: /algorithms/
-  - title: "PROJECT"
-    url: /projects/
+  - title: "LEARNING"
+    url: /techcourse/
   - title: "STUDY"
     url: /study/
   - title: "TAG"
