@@ -1,6 +1,6 @@
 ---
-title: "독서 정리"
-excerpt: "모던자바인액션"
+title: "독서 정리 - 모던 자바 인 액션"
+excerpt: "1장"
 permalink: /study/18
 categories:
   - study
