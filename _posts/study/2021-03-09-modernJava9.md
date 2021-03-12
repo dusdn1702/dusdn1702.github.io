@@ -138,7 +138,8 @@ boolean hi = validator.validate("BBBB");
 위와 같이 표현하면 더 간단하고 쓸데 없는 전략 패턴이 불필요해진다. 람다 표현식은 실행 코드를 캡슐화하므로 전략 패턴을 대신할 수 있다.  
 <br>
 
-2. [템플릿 메서드] (https://gmlwjd9405.github.io/2018/07/13/template-method-pattern.html)  
+2. [템플릿 메서드](https://gmlwjd9405.github.io/2018/07/13/template-method-pattern.html)  
+
 템플릿 메서드 패턴이란? 실행 과정이나 단계는 동일한데 단계 중 일부의 구현이 다른 경우에 사용하는 패턴이다.  
 실행 과정을 구현한 상위 클래스, 실행 과정의 일부 단계를 구현한 하위 클래스로 이루어져 있다.  
 서로 다른 A, B 클래스가 있다. 이들이 동일하게 sum() 메서드를 필요로 하는데, A는 0을 곱하고, B는 1을 곱하는 서로 다른 메서드를 필요로 한다고 하자.  
@@ -202,7 +203,8 @@ f.register((String tweet) -> {
 이렇게 간단한 패턴이라면 몰라도, 옵저버가 상태를 가지고 있다거나, 여러 메서드를 정의하고 있다면 기존 방식을 사용하자.  
 <br>
 
-4. [의무 체인] (https://ocblog.tistory.com/35) 
+4. [의무 체인](https://ocblog.tistory.com/35)  
+
 의무 체인이란? 한 객체가 어떠한 작업을 처리한 다음에 다른 객체로 결과를 전달하고, 또 그 객체가 작업을 처리하고 또 전달하는 방식이다.  
 ```java 
 public abstract class ProcessingObject<T> {
