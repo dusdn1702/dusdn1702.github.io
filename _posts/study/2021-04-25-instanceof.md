@@ -14,7 +14,7 @@ tags:
 last_modified_at: 2021-04-25
 ---  
 # instanceof란?  
-![상속구조](assets/img/inherit.png)  
+![상속구조](../img/inherit.png)  
 우리는 종종 그림과 같이 부모를 상속해서 만들어진 자식 객체가 여러 타입인 경우에 특정 클래스가 맞는지 확인하기 위해 아래 코드와 같이 `instanceof`라는 메서드를 사용하곤 한다. 코드는 piece 객체가 Blank라는 클래스 타입인지 확인하는 메서드이다. 
 ```java
 if (piece instanceof Empty) {
@@ -32,7 +32,7 @@ public boolean isSamePiece(Object piece1, Object piece2) {
 
 # instanceof의 사용을 지양하라  
 `체스` 미션을 진행하면서 위와 같이 instanceof를 사용한 구현을 했을 때, 피드백으로 받은 내용은 아래와 같다.
-![피드백](assets/img/screenshot.png)
+![피드백](../img/screenshot.png)
 
 이해를 돕기 위한 간단한 다형성을 이용한 예시 코드, instanceof를 이용한 예시 코드가 아래에 있다.  
 추상클래스를 상속받은 각 객체들이 서로 다른 점수를 더해서 반환하는 코드이다.  
