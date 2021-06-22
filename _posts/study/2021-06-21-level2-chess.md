@@ -131,20 +131,6 @@ mvc 패턴과 같은 소프트웨어 아키텍쳐 중 하나가 layered architec
 4. 서버는 웹브라우저에 응답을 패킷으로 보낸다.  
 5. 웹브라우저는 패킷을 조립해 사용자에게 보여준다.  
 
-## [infra] CloudWatch 사용  
-### 내용
-- aws CloudWatch란  
-실시간으로 실행 중인 애플리케이션을 모니터링하는 것으로 리소스 및 애플리케이션에 대해 측정할 수 있는 변수인 지표를 수집하고 추적할 수 있다.  
-지표를 감시하다가 임계값을 위반하면 경고를 보낼 수도 있다.  
-- AWS Identity and Access Management(IAM)  
-리소스에 대한 접근을 안전하게 제어할 수 있는 웹서비스  
-
-## [infra] 각 프로젝트 spring actuator metric 수집  
-### 내용
-- spring boot actuator란  
-애플리케이션 모니터링하고 관리할 수 있는 데이터 제공하는 것  
-커스텀 데이터 만드는 과정이 아래에 있다.  
-
 #### 링크
 - [5/2](https://dusdn1702.github.io/techcourse/63)  
 - [5/3](https://dusdn1702.github.io/techcourse/64)  
