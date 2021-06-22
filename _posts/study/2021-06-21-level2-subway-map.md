@@ -10,14 +10,6 @@ tags:
 last_modified_at: 2021-06-21
 ---  
 
-# 지하철 노선도 관리 - 역/노선
-## [Spring] test-junit의 동작 원리  
-### 내용
-build.gradle에 `test{useJUnitPlatform()}`의 의미  
-JUnit Vintage, JUnit Jupiter, JUnit Platform  
-junit api (@Display, @Test 등등)은  junit-jupiter-api로부터 오고,  junit-jupiter-engine에서 동작,  
-이는 junit-platform-engin -> junit-platform-launcher  
-
 ## [Spring] @SpringBootTest의 동작 원리  
 ### 내용
 spring application의 빈 사용,  webEnvironment에서 웹 서버를 시작하는 기능 포함  
@@ -45,7 +37,7 @@ ex @SpringBootTest-properties, webEnvironment(Mock, @AutoConfigureMockMvc)
 - End-to-End Test  
 
 ## [Spring] Restassured vs MockMVC  
-### 내용
+### 내용
 - RestAssured  
 rest 웹 서비스 검증을 위한 라이브러리로 end to end test인 통합테스트에 사용(@SpringBootTest로 전체 로직 테스트)  
 의존성 추가 필요 `testImplementation 'io.rest-assured:rest-assured:3.3.0'`  
@@ -75,10 +67,6 @@ Presentation Layer의 bean 로드해서 빠름
 ### 내용
 객체에게 일과 책임을 주어 일을 분담하는 것이 객체지향 프로그래밍의 원칙이다.   
 Line, Station, Section이 dto처럼 행동하는 것에 대해 의구심을 갖자.  
-
-## [java] 생성자 추가  
-### 내용
-.get으로 객체의 모든 값을 꺼내서 기존 생성자에 맞추기보다는 생성자를 추가해서 사용성을 확장하자.  
 
 ## [database] 빈 값의 처리  
 ### 내용
