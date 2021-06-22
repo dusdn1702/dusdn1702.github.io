@@ -46,11 +46,11 @@ last_modified_at: 2021-06-21
 - 빈을 등록하고 @autowired, 생성자 주입을 이용해 주입해서 사용했다.  
 
 ## 링크
-- [spring mvc](dusdn1702.github.io/study/28)  
-- [spring jdbc](dusdn1702.github.io/study/27)  
-- [spring core](dusdn1702.github.io/study/29)  
-- [리팩토링 내용 정리1](dusdn1702.github.io//techcourse/53)  
-- [리팩토링 내용 정리2](dusdn1702.github.io//techcourse/54)  
+- [spring mvc](https://dusdn1702.github.io/study/28)  
+- [spring jdbc](https://dusdn1702.github.io/study/27)  
+- [spring core](https://dusdn1702.github.io/study/29)  
+- [리팩토링 내용 정리1](https://dusdn1702.github.io//techcourse/53)  
+- [리팩토링 내용 정리2](https://dusdn1702.github.io//techcourse/54)  
 
 # 체스 - 동시게임
 ## [Spring] @ControllerAdvice, @RestControllerAdvice
@@ -123,7 +123,7 @@ mvc 패턴과 같은 소프트웨어 아키텍쳐 중 하나가 layered architec
 그렇다고 모든 서버에 동일 수준의 보안을 설정하는 것은 auto-scaling 확장이 안되고 그래서 bastion server를 만들어 얘가 총알받이가 되도록한다.  
 서비스 정상 트래픽과 관리자 트래픽이 구분되어 좋아진다.  
 
-## [network] 서버 통신 과정  
+## [Network] 서버 통신 과정  
 ### 내용
 1. 사용자가 웹브라우저 dns를 url 입력한다.  
 2. dns를 통해 등록된 실제 주소(ip)를 알아낸다.  
