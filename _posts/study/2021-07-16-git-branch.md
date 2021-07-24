@@ -1,7 +1,7 @@
 ---
 title: "git 브랜치 전략에 대해서"
-excerpt: 5장
-permalink: /study/50
+excerpt: tecoble
+permalink: /study/51
 categories:
   - techcourse
 tags:
