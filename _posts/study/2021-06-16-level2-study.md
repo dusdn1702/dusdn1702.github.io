@@ -49,10 +49,22 @@ client로부터 들어온 url에 따라 메서드를 mapping받고, model을 붙
 
 #### 사용하는 이유    
 jsp와 servlet 모두 비즈니스 로직과 뷰 호출까지 수행한다. 하지만 각각이 잘하는 일이 존재한다.  
-- jsp: html 코드에 java의 코드 전달하기 적합, 비즈니스 로직 수행 부적합  
+서블릿만 이용해도 되지만 view 단을 구현하기 위해 너무 많은 코드가 필요했고 view와 controller 역할의 분리와 간편한 프로그래밍을 위해 등장한 것이 jsp, jsp도 내부에서 servlet 호출
+
+- jsp: html 코드에 java의 코드를 넣어 web server에서 동적으로 웹 페이지를 생성해 브라우저에 전달하기에 적합, 비즈니스 로직 수행 부적합  
 - servlet: html 코드 넣기 부적합, 비즈니스 로직 수행 적합  
 따라서 spring mvc는 jsp는 뷰 로직에서만, servlet은 비즈니스 로직인 컨트롤러를 다루도록 만들어진 것이다.  
 이 사이에서 view에 비즈니스 로직의 산출물로 전달되는 것이 model이다.  
+
+#### model1, model2
+- model1
+사용자의 요청을 jsp가 java bean이나 service를 이용해 전부 처리한다.  
+mvc가 분리되어 있지 않아 관리가 어렵다.  
+
+- model2
+사용자의 요청을 servlet이 받아 view로 보여줄지 model로 보내줄지 정해서 전송한다.  
+view로 가면 jsp가 나온다. mvc가 명확하게 분리되어 있어 확장과 유지보수에 용이하다.  
+- [참고](https://coding-factory.tistory.com/69)  
 
 #### 장점
 유지보수 편리  
@@ -168,8 +180,6 @@ tls는 데이터를 암호화하여 주고받는다. 이 과정에서 클라이�
 ### [Network] load balancer  
 서버에 접근하는 작업량을 특정 알고리즘에 의해 분산시켜주는 것이다.  
 l4, l7이 존재하는데 전송계층, 표현 계층에서 적용되는 차이가 있다.  
-
-
 
 [servlet](https://papimon.tistory.com/84)  
 [spring mvc http 요청](https://livenow14.tistory.com/59)  

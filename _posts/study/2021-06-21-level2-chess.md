@@ -60,6 +60,8 @@ last_modified_at: 2021-06-21
 구현 방식은 따로 클래스를 만들어서 그 안에서 exceptionhandler를 가지도록 한다.   
 controllerAdvice는 controller에서 발생한 exception들을 잡아서 처리한다.  
 비지니스 로직에 두지 않고 분리함으로써 비즈니스 로직에 더욱 집중할 수 있다.  
+ControllerAdvice는 ExceptionHandler를 한곳에 모아서 어떠한 방식으로든 처리할 수 있다면,
+RestControllerAdvice는 ExceptionHandler + ResponseBody로 처리된다. @ResponseBody를 달지 않고도 response를 줄 수 있는 것이다.
 
 ## [Spring] dto의 사용 영역  
 ### 내용  
