@@ -40,6 +40,17 @@ tags:
 3. b, c, d push [a, b, c, d]
 4. 하나를 뺀다. Pop [a, b, c]
 
+### in java
+```
+Stack<Element> stack = new Stack<>();
+
+public Element push(Element item); // 데이터 추가
+public Element pop(); // 최근에 추가된(Top) 데이터 삭제
+public Element peek(); // 최근에 추가된(Top) 데이터 조회
+public boolean empty(); // stack의 값이 비었는지 확인, 비었으면 true, 아니면 false
+public int search(Object o); // 인자값으로 받은 데이터의 위치 반환
+```
+
 ### in python
 
 파이썬에서는 리스트 자료형을 스택으로 사용할 수 있다.
@@ -160,6 +171,55 @@ tags:
 2. a를 넣는다. enqueue [a]
 3. b, c, d enqueue [a, b, c, d]
 4. 하나를 뺀다. dequeue [b, c, d]
+
+### in java
+#### queue
+```
+Queue<String> queue = new LinkedList<>(); // 선언
+
+public boolean add(E e); // e를 큐에 추가
+public E element(); // front의 값을 반환 
+public boolean offer(E e); //용량 제한을 위반하지 않고 이 큐를 사용할 수 있다면 e를 큐에 추가
+public E peek(); // front부분의 값을 반환, 비었으면 null
+public E poll(); // front의 값을 제거하고 반환, 비었으면 null
+public E remove(); //front의 값을 제거하고 그 값을 반환
+```
+
+#### priority queue
+```
+PriorityQueue<Element> priorityQueue = new PriorityQueue<>(); //우선순위 낮은 요소 순
+PriorityQueue<Element> priorityQueue = new PriorityQueue<>(Collections.reverseOrder()); //우선순위 높은 요소 순
+priorityQueue.add(E e);     // priorityQueue 값 추가, 성공하면 true, 공간 없으면 IllegalStateException
+priorityQueue.offer(E e);   // priorityQueue 값 추가
+priorityQueue.poll(); // priorityQueue 첫번째 값 반환하고 제거, 비어있으면 null
+priorityQueue.remove(); // priorityQueue 첫번째 값 제거
+priorityQueue.peek(); // priorityQueue 첫번째 값 참조
+priorityQueue.clear();  // priorityQueue 초기화
+```
+
+#### deque
+```
+Deque<Element> deque = new ArrayDeque<>();  // 선언
+
+public boolean add(E e); // e를 rear에 추가
+public void addLast(E e); // e를 rear에 추가
+public void addFirst(E e); //e를 front에 추가
+public boolean contains(O o); //o가 덱에 있으면 true
+public Iterator<E> descendingIterator(); //덱의 reverse Iterator 반환
+public E element(); // 덱의 front 값을 반환
+public Iterator<E> iterator(); // 덱의 iterator 값을 반환
+public E peek(); // 덱의 front 값을 반환, 덱이 비었으면 null
+public E peekFirst(); // peek과 동일
+public E peekLast(); //덱의 rear 반환, 비었으면 null
+public E pop(); //덱의 front 값을 제거 후 그 값을 반환
+public void push(E e); // addFirst
+public E remove(); // pop
+public E removeFirst(); // pop
+public boolean removeFirstOccurence(Object o); //front부터 o값이 처음 나온 지점을 찾아내 제거
+public E removeLast(); //덱의 rear 값을 제거 후 반환
+public boolean removeLastOccurence(Object o); //rear부터 o값이 처음 나온 지점을 찾아내 제거
+public int size();
+```
 
 ### in python
 
