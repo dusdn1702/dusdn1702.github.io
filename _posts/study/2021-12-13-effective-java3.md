@@ -1,7 +1,7 @@
 ---
 title: "Effective Java - item3"
 excerpt: 2장 객체 생성과 파괴
-permalink: /study/69
+permalink: /study/70
 categories:
   - java
 tags:
