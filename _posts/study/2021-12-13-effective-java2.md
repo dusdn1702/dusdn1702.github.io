@@ -1,5 +1,5 @@
 ---
-title: "Effective Java - item1"
+title: "Effective Java - item2"
 excerpt: 2장 객체 생성과 파괴
 permalink: /study/69
 categories:
