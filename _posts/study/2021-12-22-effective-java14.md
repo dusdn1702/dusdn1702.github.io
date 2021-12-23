@@ -1,4 +1,5 @@
 ---
+
 title: "Effective Java - item14"
 excerpt: 3장 모든 객체의 공통 메서드
 permalink: /study/75
